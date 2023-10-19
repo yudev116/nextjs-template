@@ -20,8 +20,10 @@ module.exports = {
 		],
 		'@next/next/no-img-element': 'off',
 	},
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		project: './tsconfig.json',
 	},
+	plugins: ['import', '@typescript-eslint'],
 	root: true,
-};
+}
