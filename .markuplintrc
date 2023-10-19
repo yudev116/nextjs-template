@@ -10,5 +10,25 @@
 	},
 	"specs": {
 		".tsx$": "@markuplint/react-spec"
+	},
+	"rules": {
+		"no-hard-code-id": false,
+		"ineffective-attr": false,
+		"case-sensitive-attr-name": false,
+		"case-sensitive-tag-name": false,
+		"landmark-roles": false,
+		"no-boolean-attr-value": false,
+		"no-refer-to-non-existent-id": true,
+		"no-default-value": false,
+		"end-tag": false,
+		"label-has-control": false,
+		"class-naming": false,
+		"require-accessible-name": true,
+		"character-reference": false,
+		"use-list": false,
+		"no-use-event-handler-attr": false,
+		"wai-aria": true,
+		"required-h1": true,
+		"attr-value-quotes": false
 	}
 }
