@@ -1,15 +1,16 @@
 const path = require('path');
 
-const buildEslintCommand = (filenames) =>
-	`eslint --max-warnings=0 ${filenames
-		.map((f) => path.relative(process.cwd(), f))
-		.join(' --file ')}`;
+const buildEslintCommand = (filenames) => {
+	return `eslint --max-warnings=0 --fix ${filenames.map((f) =>
+		path.relative(process.cwd(), f),
+	)}`;
+};
 
 module.exports = {
 	'src/**/*.{ts,tsx}': [
 		() => 'tsc --incremental false --noEmit',
 		buildEslintCommand,
-		'prettier --write',
+		() => 'npm run format',
 	],
 	'src/**/*.{css,scss}': [() => 'npm run slint --fix'],
 };
