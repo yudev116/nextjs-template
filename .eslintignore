@@ -1,8 +1,7 @@
 # File
 .eslintrc.js
-next.config.js
 .prettierrc.js
-tsconfig.json
+next.config.js
 
 # Directory
 .storybook/*
