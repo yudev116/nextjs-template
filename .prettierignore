@@ -1,0 +1,6 @@
+# Config
+package.json
+package-lock.json
+
+# Markdown
+*.md
