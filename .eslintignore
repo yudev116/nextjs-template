@@ -1,5 +1,6 @@
 # File
 .eslintrc.js
+.stylelintrc.js
 .prettierrc.js
 next.config.js
 
