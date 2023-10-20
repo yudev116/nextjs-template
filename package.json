@@ -11,6 +11,7 @@
 		"mlint": "markuplint 'src/**/*.{jsx,tsx}'",
 		"format": "prettier --write 'src/**/*.{ts,tsx}'",
 		"fix": "npm run lint --fix && npm run slint --fix && npm run mlint --fix",
+		"typecheck": "tsc --incremental false --noEmit",
 		"prepare": "husky install"
 	},
 	"dependencies": {
