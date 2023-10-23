@@ -25,5 +25,6 @@ module.exports = {
 		project: './tsconfig.json',
 	},
 	plugins: ['import', '@typescript-eslint'],
+	ignorePatterns: ['.eslintrc.js'],
 	root: true,
 };
